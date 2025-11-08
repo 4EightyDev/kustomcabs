@@ -1,0 +1,3 @@
+module.exports=[35112,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].ReactDOM},34416,a=>{"use strict";var b=a.i(87924),c=a.i(61280);function d({className:a="",delay:d=0}){return(0,b.jsx)(c.motion.div,{className:`relative bg-luxury-gray/20 border border-luxury-gray/30 rounded-lg flex items-center justify-center ${a}`,initial:{opacity:0},animate:{opacity:1},transition:{duration:.5,delay:d},children:(0,b.jsxs)("div",{className:"text-center p-4",children:[(0,b.jsx)("div",{className:"mx-auto bg-gray-200 border-2 border-dashed border-gray-300 rounded-xl w-16 h-16 mb-4"}),(0,b.jsx)("p",{className:"text-luxury-gray text-sm",children:"Luxury Cabinetry Image"})]})})}a.s(["default",()=>d])}];
+
+//# sourceMappingURL=_b66dc184._.js.map

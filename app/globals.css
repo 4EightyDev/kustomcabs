@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'neue-haas-grotesk-display', 'neue-haas-grotesk-text', sans-serif;
+  background-color: #fafafa;
+  color: #1a1a1a;
+}
+
+@layer components {
+  .luxury-card {
+    @apply bg-[#f8f8f8] border border-[#e0e0e0] rounded-lg overflow-hidden shadow-sm transition-all duration-300 ease-in-out;
+  }
+  
+  .luxury-btn {
+    @apply px-6 py-3 bg-[#1a1a1a] text-[#f8f8f8] rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-md;
+  }
+  
+  .luxury-heading {
+    @apply text-4xl md:text-5xl font-light tracking-tight text-[#1a1a1a];
+  }
+  
+  .luxury-subheading {
+    @apply text-xl font-light text-[#e0e0e0];
+  }
+}

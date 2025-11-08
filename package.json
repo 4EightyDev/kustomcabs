@@ -1,0 +1,28 @@
+{
+  "name": "luxury-cabinetry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^10.18.0",
+    "next": "^16.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.0"
+
+
+  },
+  "devDependencies": {
+    "@next/font": "^13.5.4",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6"
+  }
+}
