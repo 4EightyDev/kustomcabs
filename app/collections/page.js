@@ -45,7 +45,7 @@ const collections = [
 
 export default function Collections() {
   return (
-    <div className="min-h-screen bg-luxury-white pt-24 pb-20">
+    <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -75,10 +75,10 @@ export default function Collections() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-light mb-2">{collection.name}</h3>
-                <p className="text-luxury-gray mb-4">{collection.description}</p>
+                <p className="text-zinc mb-4">{collection.description}</p>
                 <Link 
                   href="#" 
-                  className="text-luxury-dark font-medium hover:underline inline-flex items-center"
+                  className="text-zinc-950 font-medium hover:underline inline-flex items-center"
                 >
                   View Collection
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">

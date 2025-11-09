@@ -10,21 +10,20 @@ export default function Navigation() {
   
   const navItems = [
     { name: 'Home', href: '/' },
-    { name: 'Collections', href: '/collections' },
-    { name: 'Craftsmanship', href: '/craftsmanship' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' }
+    { name: 'Services', href: '/services' },
+    { name: 'Gallery', href: '/gallery' },
+    { name: 'About Us', href: '/about' },
+    // { name: 'Contact', href: '/contact' }
   ]
 
   return (
-    <nav className="hidden md:block">
-      <ul className="flex space-x-10">
+    <nav className="hidden md:block text-zinc-600 grow">
+      <ul className="flex w-max justify-start whitespace-nowrap mr-auto">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li className='after:inline-block after:text-primary after:mx-4 after:content-["/"]' key={item.name}>
             <Link 
               href={item.href} 
-              className={`font-light transition-opacity ${pathname === item.href ? 'text-luxury-dark' : 'text-luxury-dark hover:opacity-70'}`}
+              className={`uppercase text-xs tracking-widest transition-all duration-300  ${pathname === item.href ? 'text-primary' : 'text-zinc-200 hover:text-white'}`}
             >
               {item.name}
             </Link>

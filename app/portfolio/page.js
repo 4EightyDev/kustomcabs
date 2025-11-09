@@ -14,7 +14,7 @@ const portfolioItems = [
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-luxury-white pt-24 pb-20">
+    <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -44,8 +44,8 @@ export default function Portfolio() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-light mb-1">{item.title}</h3>
-                <p className="text-luxury-gray mb-4">{item.location}</p>
-                <button className="text-luxury-dark font-medium hover:underline">
+                <p className="text-zinc mb-4">{item.location}</p>
+                <button className="text-zinc-950 font-medium hover:underline">
                   View Project
                 </button>
               </div>

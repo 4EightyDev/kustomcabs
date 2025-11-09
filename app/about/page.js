@@ -5,7 +5,7 @@ import PlaceholderImage from '../../components/PlaceholderImage'
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-luxury-white pt-24 pb-20">
+    <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -69,8 +69,8 @@ export default function About() {
               { title: 'Client Partnership', description: 'Your dream kitchen is our mission, from concept to completion' }
             ].map((item, index) => (
               <div key={index} className="luxury-card p-8">
-                <h3 className="text-xl font-light mb-4 text-luxury-dark">{item.title}</h3>
-                <p className="text-luxury-gray">{item.description}</p>
+                <h3 className="text-xl font-light mb-4 text-zinc-950">{item.title}</h3>
+                <p className="text-zinc">{item.description}</p>
               </div>
             ))}
           </div>

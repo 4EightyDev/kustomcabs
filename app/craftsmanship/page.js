@@ -24,7 +24,7 @@ const craftsmanshipFeatures = [
 
 export default function Craftsmanship() {
   return (
-    <div className="min-h-screen bg-luxury-white pt-24 pb-20">
+    <div className="min-h-screen bg-white pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div 
           className="text-center mb-16"
@@ -79,8 +79,8 @@ export default function Craftsmanship() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <h3 className="text-xl font-light mb-4 text-luxury-dark">{feature.title}</h3>
-              <p className="text-luxury-gray">{feature.description}</p>
+              <h3 className="text-xl font-light mb-4 text-zinc-950">{feature.title}</h3>
+              <p className="text-zinc">{feature.description}</p>
             </motion.div>
           ))}
         </div>

@@ -42,7 +42,7 @@ function Contact() {
         });
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-luxury-white pt-24 pb-20",
+        className: "min-h-screen bg-white pt-24 pb-20",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-7xl mx-auto px-4",
             children: [
@@ -125,7 +125,7 @@ function Contact() {
                                             className: "flex items-start",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mr-4 text-luxury-dark",
+                                                    className: "mr-4 text-zinc-950",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                         xmlns: "http://www.w3.org/2000/svg",
                                                         className: "h-6 w-6",
@@ -163,7 +163,7 @@ function Contact() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-luxury-gray",
+                                                            className: "text-zinc",
                                                             children: "(555) 123-4567"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.js",
@@ -186,7 +186,7 @@ function Contact() {
                                             className: "flex items-start",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mr-4 text-luxury-dark",
+                                                    className: "mr-4 text-zinc-950",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                         xmlns: "http://www.w3.org/2000/svg",
                                                         className: "h-6 w-6",
@@ -224,7 +224,7 @@ function Contact() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-luxury-gray",
+                                                            className: "text-zinc",
                                                             children: "info@luxurycabinets.com"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.js",
@@ -247,7 +247,7 @@ function Contact() {
                                             className: "flex items-start",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "mr-4 text-luxury-dark",
+                                                    className: "mr-4 text-zinc-950",
                                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                                         xmlns: "http://www.w3.org/2000/svg",
                                                         className: "h-6 w-6",
@@ -297,7 +297,7 @@ function Contact() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-luxury-gray",
+                                                            className: "text-zinc",
                                                             children: "123 Design Avenue"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.js",
@@ -305,7 +305,7 @@ function Contact() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                            className: "text-luxury-gray",
+                                                            className: "text-zinc",
                                                             children: "New York, NY 10001"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/contact/page.js",
@@ -361,7 +361,7 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                 htmlFor: "name",
-                                                className: "block text-luxury-dark font-light mb-2",
+                                                className: "block text-zinc-950 font-light mb-2",
                                                 children: "Name"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
@@ -375,7 +375,7 @@ function Contact() {
                                                 value: formData.name,
                                                 onChange: handleChange,
                                                 required: true,
-                                                className: "w-full px-4 py-3 border border-luxury-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-dark"
+                                                className: "w-full px-4 py-3 border border-zinc rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-950"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
                                                 lineNumber: 109,
@@ -392,7 +392,7 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                 htmlFor: "email",
-                                                className: "block text-luxury-dark font-light mb-2",
+                                                className: "block text-zinc-950 font-light mb-2",
                                                 children: "Email"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
@@ -406,7 +406,7 @@ function Contact() {
                                                 value: formData.email,
                                                 onChange: handleChange,
                                                 required: true,
-                                                className: "w-full px-4 py-3 border border-luxury-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-dark"
+                                                className: "w-full px-4 py-3 border border-zinc rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-950"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
                                                 lineNumber: 122,
@@ -423,7 +423,7 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                 htmlFor: "phone",
-                                                className: "block text-luxury-dark font-light mb-2",
+                                                className: "block text-zinc-950 font-light mb-2",
                                                 children: "Phone"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
@@ -436,7 +436,7 @@ function Contact() {
                                                 name: "phone",
                                                 value: formData.phone,
                                                 onChange: handleChange,
-                                                className: "w-full px-4 py-3 border border-luxury-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-dark"
+                                                className: "w-full px-4 py-3 border border-zinc rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-950"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
                                                 lineNumber: 135,
@@ -453,7 +453,7 @@ function Contact() {
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                 htmlFor: "message",
-                                                className: "block text-luxury-dark font-light mb-2",
+                                                className: "block text-zinc-950 font-light mb-2",
                                                 children: "Message"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
@@ -467,7 +467,7 @@ function Contact() {
                                                 onChange: handleChange,
                                                 required: true,
                                                 rows: "5",
-                                                className: "w-full px-4 py-3 border border-luxury-gray rounded-lg focus:outline-none focus:ring-2 focus:ring-luxury-dark"
+                                                className: "w-full px-4 py-3 border border-zinc rounded-lg focus:outline-none focus:ring-2 focus:ring-zinc-950"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/contact/page.js",
                                                 lineNumber: 147,
