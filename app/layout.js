@@ -1,5 +1,6 @@
 import './globals.css'
 import Header from '../components/Header'
+import { Providers } from './providers'
 
 export const metadata = {
   title: 'Luxury Cabinetry | Premium Kitchen Design',
@@ -12,9 +13,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/hyq8egk.css" />
       </head>
-      <body className='bg-zinc-950 text-zinc-500 font-text antialiased font-medium overflow-x-hidden'>
-        <Header />
-        {children}
+      <body className='bg-white text-zinc-500 font-text antialiased font-medium overflow-x-hidden'>
+        <Providers>
+          <Header />
+          {children}
+        </Providers>
       </body>
     </html>
   )

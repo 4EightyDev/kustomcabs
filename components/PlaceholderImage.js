@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 
 export default function PlaceholderImage({ className = '', delay = 0 }) {
   return (

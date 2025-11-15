@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -8,8 +8,8 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
   
   return (
-    <footer className="bg-white py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-zinc-950 py-16 px-4">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
