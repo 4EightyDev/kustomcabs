@@ -5,19 +5,23 @@
   --font-sans: neue-haas-grotesk-display, sans-serif;
   --color-primary: hsl(33, 40%, 70%);
   --color-primary-light: hsl(33, 42%, 65%);
+  --color-surface:  hsl(0, 0%, 4%);
+  --color-surface-dark:  hsl(0, 0%, 5%);
+  --color-surface-medium:  hsl(0, 0%, 7%);
+  --color-surface-light:  hsl(0, 0%, 10%);
   --container-8xl: 96rem;
 }
 
 @utility section-heading {
-  @apply mt-6 mb-3 font-medium italic text-3xl;
+  @apply mt-4 sm:mt-5 md:mt-6 mb-2 sm:mb-3 font-medium italic text-xl sm:text-2xl md:text-3xl;
 }
 
 @utility small-heading {
-  @apply mb-3 font-medium italic text-2xl;
+  @apply mb-2 sm:mb-3 font-medium italic text-lg sm:text-xl md:text-2xl;
 }
 
 @utility page-heading {
-  @apply mt-6 mb-3 font-semibold italic text-5xl tracking-tighter;
+  @apply mt-4 sm:mt-5 md:mt-6 mb-2 sm:mb-3 font-semibold italic text-3xl sm:text-4xl md:text-5xl tracking-tighter;
 }
 
 /* Prevent rubber-banding but allow swipe gesture during card drag */

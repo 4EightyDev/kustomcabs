@@ -8,14 +8,14 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-zinc-950 min-h-[60vh] flex items-center justify-center">
+      <section className="relative bg-surface min-h-[50vh] sm:min-h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-[url('/images/herobg.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="relative z-10 text-center px-6 pt-32 pb-24">
+        <div className="relative z-10 text-center px-4 sm:px-6 pt-24 sm:pt-28 md:pt-32 pb-16 sm:pb-20 md:pb-24">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="page-heading text-white"
+            className="page-heading text-white text-3xl sm:text-4xl md:text-5xl"
           >
             About Kustomcabs
           </motion.h1>
@@ -23,7 +23,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-2xl mx-auto text-zinc-300 tracking-wide mt-6"
+            className="max-w-2xl mx-auto text-zinc-300 tracking-wide mt-4 sm:mt-6 text-sm sm:text-base px-2"
           >
             Crafting exceptional kitchen experiences with timeless elegance and unparalleled quality for over 25 years.
           </motion.p>
@@ -31,9 +31,9 @@ export default function About() {
       </section>
 
       {/* Our Story */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-12 gap-12 items-center">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-12 gap-6 md:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -41,14 +41,14 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="col-span-12 md:col-span-6"
             >
-              <h3 className="section-heading text-zinc-900">Our Story</h3>
-              <p className="tracking-wide text-zinc-600 mb-6">
+              <h3 className="section-heading text-zinc-900 text-xl sm:text-2xl md:text-3xl">Our Story</h3>
+              <p className="tracking-wide text-zinc-600 mb-4 sm:mb-6 text-sm sm:text-base">
                 Founded with a passion for exceptional craftsmanship, Kustomcabs has been transforming kitchens and bathrooms across the region for over two decades. What started as a small custom shop has grown into a trusted name in luxury cabinetry.
               </p>
-              <p className="tracking-wide text-zinc-600 mb-6">
+              <p className="tracking-wide text-zinc-600 mb-4 sm:mb-6 text-sm sm:text-base">
                 We believe that every home deserves cabinetry that reflects the homeowner's unique style while standing the test of time. Our commitment to quality, attention to detail, and personalized service sets us apart in an industry where shortcuts are all too common.
               </p>
-              <p className="tracking-wide text-zinc-600">
+              <p className="tracking-wide text-zinc-600 text-sm sm:text-base">
                 Today, we're proud to partner with premium manufacturers like <span className="text-primary font-semibold">Bellmont Cabinets</span> and <span className="text-primary font-semibold">Procraft Cabinetry</span>, bringing you the finest cabinetry available while maintaining our signature custom touch.
               </p>
             </motion.div>
@@ -73,22 +73,22 @@ export default function About() {
       </section>
 
       {/* Our Values */}
-      <section className="py-24 bg-zinc-50">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 sm:py-16 md:py-24 bg-zinc-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <h3 className="section-heading text-zinc-900">Our Values</h3>
-            <p className="tracking-wide text-zinc-600 max-w-2xl mx-auto">
+            <h3 className="section-heading text-zinc-900 text-xl sm:text-2xl md:text-3xl">Our Values</h3>
+            <p className="tracking-wide text-zinc-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
               The principles that guide everything we do.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 title: 'Craftsmanship',
@@ -112,11 +112,11 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white p-8 rounded-2xl shadow-lg"
+                className="bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg"
               >
-                <div className="text-5xl mb-6">{value.icon}</div>
-                <h4 className="small-heading text-zinc-900 mb-4">{value.title}</h4>
-                <p className="text-zinc-600 tracking-wide">{value.description}</p>
+                <div className="text-3xl sm:text-4xl md:text-5xl mb-4 sm:mb-5 md:mb-6">{value.icon}</div>
+                <h4 className="small-heading text-zinc-900 mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl">{value.title}</h4>
+                <p className="text-zinc-600 tracking-wide text-sm sm:text-base">{value.description}</p>
               </motion.div>
             ))}
           </div>
@@ -124,9 +124,9 @@ export default function About() {
       </section>
 
       {/* Why We're Different */}
-      <section className="py-24 bg-zinc-950">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid grid-cols-12 gap-12 items-center">
+      <section className="py-12 sm:py-16 md:py-24 bg-surface">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-12 gap-6 md:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -150,11 +150,11 @@ export default function About() {
               transition={{ duration: 0.8 }}
               className="col-span-12 md:col-span-6 order-1 md:order-2"
             >
-              <h3 className="section-heading text-white">Why We're Different</h3>
-              <p className="tracking-wide text-zinc-400 mb-8">
+              <h3 className="section-heading text-white text-xl sm:text-2xl md:text-3xl">Why We're Different</h3>
+              <p className="tracking-wide text-zinc-400 mb-6 sm:mb-8 text-sm sm:text-base">
                 In a world of mass production, we remain committed to the art of custom cabinetry. Here's what sets us apart:
               </p>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {[
                   {
                     title: 'Personalized Service',
@@ -179,12 +179,12 @@ export default function About() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex gap-4"
+                    className="flex gap-3 sm:gap-4"
                   >
                     <div className="shrink-0 w-2 h-2 rounded-full bg-primary mt-2"></div>
                     <div>
-                      <h5 className="font-semibold text-white mb-1">{item.title}</h5>
-                      <p className="text-sm text-zinc-400 tracking-wide">{item.desc}</p>
+                      <h5 className="font-semibold text-white mb-1 text-sm sm:text-base">{item.title}</h5>
+                      <p className="text-xs sm:text-sm text-zinc-400 tracking-wide">{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -195,22 +195,22 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-12 sm:py-16 md:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-12 md:mb-16"
           >
-            <h3 className="section-heading text-zinc-900">Meet Our Team</h3>
-            <p className="tracking-wide text-zinc-600 max-w-2xl mx-auto">
+            <h3 className="section-heading text-zinc-900 text-xl sm:text-2xl md:text-3xl">Meet Our Team</h3>
+            <p className="tracking-wide text-zinc-600 max-w-2xl mx-auto text-sm sm:text-base px-2">
               A dedicated group of craftspeople, designers, and installers committed to excellence.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {[
               {
                 name: 'Design Team',
@@ -234,11 +234,11 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-zinc-50 p-8 rounded-2xl"
+                className="bg-zinc-50 p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl"
               >
-                <h4 className="small-heading text-zinc-900 mb-2">{team.name}</h4>
-                <p className="text-primary font-semibold text-sm mb-4 uppercase tracking-wider">{team.role}</p>
-                <p className="text-zinc-600 tracking-wide text-sm">{team.description}</p>
+                <h4 className="small-heading text-zinc-900 mb-2 text-lg sm:text-xl md:text-2xl">{team.name}</h4>
+                <p className="text-primary font-semibold text-xs sm:text-sm mb-3 sm:mb-4 uppercase tracking-wider">{team.role}</p>
+                <p className="text-zinc-600 tracking-wide text-xs sm:text-sm">{team.description}</p>
               </motion.div>
             ))}
           </div>

@@ -46,6 +46,13 @@ const CardStackSlider = () => {
     }
   }
   const shuffleVariants = {
+    initial: (index) => ({
+      scale: 1 - index * 0.05,
+      y: index * 30,
+      x: index * -5,
+      rotate: (index - 1) * 0,
+    }),
+
     // resting state: stacked with slight scale differences, no vertical offset
     rest: (index) => ({
       scale: 1 - index * 0.05,
@@ -124,7 +131,7 @@ const CardStackSlider = () => {
         <motion.div 
           ref={mobileSliderRef}
           id='mobileSlider' 
-          className="md:hidden relative w-full max-w-80 mx-auto h-full -translate-y-1/2"
+          className="md:hidden relative w-full max-w-80 mx-auto h-full -translate-y-20"
         >
           <AnimatePresence mode="popLayout">
             {cards.map((card, index) => (
@@ -195,7 +202,7 @@ const CardStackSlider = () => {
                 exit="exit"
                 custom={index}
                 onClick={index === 0 ? handleNext : undefined}
-                whileHover={{ scale: index === 0 ? 1.02 : 1 - (index * 0.05) }}
+                whileHover={{ scale: index === 0 ? 1.01 : 1 - (index * 0.05) }}
                 transition={{ duration: 0.3 }}
               >
                 <div className="relative w-full h-full overflow-hidden">

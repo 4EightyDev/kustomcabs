@@ -76,12 +76,12 @@ export default function Home() {
             before:bg-center
             before:bg-no-repeat
             before:-z-1
-            bg-zinc-950/90 relative flex items-center justify-center">
-          <motion.div className='flex flex-col gap-2 pt-40 pb-80 px-6 text-center'>
+            bg-surface/90 relative flex items-center justify-center">
+          <motion.div className='flex flex-col gap-2 pt-24 sm:pt-32 md:pt-40 pb-32 sm:pb-48 md:pb-80 px-4 sm:px-6 text-center'>
             <motion.svg style={{y: speed5}} initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8 }}
-                  className='max-w-xl mx-auto text-primary' fill='currentColor' id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/motion.svg" viewBox="0 0 280.62 50.73">
+                  className='max-w-[240px] sm:max-w-md md:max-w-xl mx-auto text-primary' fill='currentColor' id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/motion.svg" viewBox="0 0 280.62 50.73">
                   <path className="cls-1" d="M17.2,38.19h.11v3.26H0v-.11c1.83,0,2.27-.88,2.31-4.92v-15.63c-.04-4.04-.48-4.92-2.31-4.92v-.07h16.54v3.26h-.11c-1.17-2.35-2.57-2.9-6.86-2.9h-4.77v12.25h8.29l-.95,2.9h-.11c-.84-1.69-2.38-2.49-5.94-2.49v-.04h-1.28v12.25h5.54c4.29,0,5.69-.51,6.86-2.86Z"/>
                   <path className="cls-1" d="M19.11,41.34c1.58,0,2.02-.84,2.09-4.7v-15.3c-.07-3.89-.51-4.73-2.09-4.73v-.11l4.37-1.14v20.8c.04,4.26.48,5.17,2.09,5.17v.11h-6.46v-.11Z"/>
                   <path className="cls-1" d="M42.18,37.49c-1.14,2.93-3.67,4.4-6.31,4.4-3.96,0-8.11-3.26-8.11-9.83s4.37-9.39,8.29-9.39c5.72,0,6.71,5.32,5.43,7.37h-11.11c-.11.62-.15,1.28-.15,1.98,0,6.02,3.26,8.36,6.38,8.36,2.2,0,4.37-1.17,5.25-3.08l.33.18ZM30.41,29.68h8.77c1.36-2.86-.07-6.57-3.45-6.57-2.57,0-4.73,2.53-5.32,6.57Z"/>
@@ -101,35 +101,35 @@ export default function Home() {
             </motion.svg>
             <motion.p
               style={{y: speed4}}
-              className="mx-auto md:-translate-y-5 md:-translate-x-12 bg-linear-to-r text-transparent bg-clip-text from-white via-zinc-100 to-zinc-500 max-w-max font-medium uppercase italic text-xs tracking-[0.3rem]"
+              className="mx-auto md:-translate-y-5 md:-translate-x-12 bg-linear-to-r text-transparent bg-clip-text from-white via-zinc-100 max-w-max font-medium uppercase italic text-[10px] sm:text-xs tracking-[0.2rem] sm:tracking-[0.3rem]"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               Designer Cabinets by Kustomcabs
             </motion.p>
-            <motion.h3 style={{y: speed3}} className='section-heading text-white'>Timeless craftsmanship meets modern design.</motion.h3>
-            <motion.p style={{y: speed2}} className='tracking-wide text-zinc-300'>We transform everyday spaces into expressions of refined living. <br /> <span className='max-sm:hidden'>Featuring premium cabinetry from <span className='text-primary'>Bellmont Cabinets</span> and <span className='text-primary'>Procraft Cabinetry</span>.</span></motion.p>
+            <motion.h3 style={{y: speed3}} className='section-heading text-white text-xl sm:text-2xl md:text-3xl px-2'>Timeless craftsmanship meets modern design.</motion.h3>
+            <motion.p style={{y: speed2}} className='tracking-wide text-zinc-300 text-sm sm:text-base px-2'>We transform everyday spaces into expressions of refined living. <br className='hidden sm:block' /> <span className='max-sm:hidden'>Featuring premium cabinetry from <span className='text-primary'>Bellmont Cabinets</span> and <span className='text-primary'>Procraft Cabinetry</span>.</span></motion.p>
           </motion.div>          
       </section>    
         <CardStackSlider />
-      <section id='valuejProps'>
-        <div className='grid grid-cols-12 px-6 max-w-6xl mx-auto'>
+      <section id='valuejProps' className='py-12 sm:py-16 md:py-24'>
+        <div className='grid grid-cols-12 px-4 sm:px-6 max-w-6xl mx-auto gap-6 md:gap-12'>
           <div className='col-span-12 md:col-span-6'>
-            <div className='flex -space-x-20 justify-start'>
-              <motion.div style={{y: speed1}} className='scale-90 relative overflow-hidden md:w-1/2 w-full rounded-3xl shadow-2xl aspect-3/5'>
+            <div className='flex -space-x-8 sm:-space-x-12 md:-space-x-20 justify-start'>
+              <motion.div style={{y: speed1}} className='scale-90 relative overflow-hidden md:w-1/2 w-full rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl aspect-3/5'>
                 <Image className='absolute w-full object-cover h-full' src='/images/services-kitchen_remodel.jpg' alt='image' width={1600} height={900} />
               </motion.div>
-              <motion.div style={{y: speed3}} className='scale-95 relative overflow-hidden md:w-1/2 w-full rounded-3xl shadow-2xl aspect-3/5'>
+              <motion.div style={{y: speed3}} className='scale-95 relative overflow-hidden md:w-1/2 w-full rounded-2xl sm:rounded-3xl shadow-xl sm:shadow-2xl aspect-3/5'>
                 <Image className='absolute w-full object-cover h-full' src='/images/services-bathroom_remodel.jpg' alt='image' width={1600} height={900} />
               </motion.div>
             </div>
           </div>
-          <div style={{y: speed1}} className='col-span-12 md:col-span-6'>
-            <motion.h3 className='section-heading'>Kitchen & Bath Remodels</motion.h3>
-            <motion.p className='tracking-wide'>Transforming spaces with precision craftsmanship. We focus on kitchen and bathroom remodels that combine thoughtful design and premium materials.</motion.p>
+          <div style={{y: speed1}} className='col-span-12 md:col-span-6 flex flex-col justify-center'>
+            <motion.h3 className='section-heading text-xl sm:text-2xl md:text-3xl'>Kitchen & Bath Remodels</motion.h3>
+            <motion.p className='tracking-wide text-sm sm:text-base mt-2 sm:mt-4'>Transforming spaces with precision craftsmanship. We focus on kitchen and bathroom remodels that combine thoughtful design and premium materials.</motion.p>
             <Link href="/services">
-              <button className="mt-6 px-6 py-3 bg-primary text-white rounded-xl shadow-md hover:bg-primary/90 transition font-semibold text-base">
+              <button className="mt-4 sm:mt-6 px-5 sm:px-6 py-2.5 sm:py-3 bg-primary text-white rounded-lg sm:rounded-xl shadow-md hover:bg-primary/90 transition font-semibold text-sm sm:text-base">
                 View Our Services
               </button>
           </Link>
@@ -138,22 +138,22 @@ export default function Home() {
       </section>
 
       {/* Materials & Finishes Section */}
-      <section id='materials' className='py-24 bg-zinc-50'>
-        <div className='max-w-6xl mx-auto px-6'>
+      <section id='materials' className='py-12 sm:py-16 md:py-24 bg-zinc-50'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className='text-center mb-16'
+            className='text-center mb-8 sm:mb-12 md:mb-16'
           >
-            <h3 className='section-heading text-zinc-900'>Premium Materials & Finishes</h3>
-            <p className='tracking-wide text-zinc-600 max-w-2xl mx-auto'>
+            <h3 className='section-heading text-surface-light text-xl sm:text-2xl md:text-3xl'>Premium Materials & Finishes</h3>
+            <p className='tracking-wide max-w-2xl mx-auto text-sm sm:text-base px-2'>
               Every detail matters. We source only the finest materials to ensure your cabinetry stands the test of time.
             </p>
           </motion.div>
           
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8'>
             {[
               {
                 title: 'Hardwood Selection',
@@ -177,13 +177,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className='bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow'
+                className='bg-white p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg hover:shadow-xl transition-shadow'
               >
-                <h4 className='small-heading text-zinc-900 mb-4'>{item.title}</h4>
-                <p className='text-zinc-600 mb-6 tracking-wide'>{item.description}</p>
+                <h4 className='small-heading text-surface-light mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl'>{item.title}</h4>
+                <p className='mb-4 sm:mb-6 tracking-wide text-sm sm:text-base'>{item.description}</p>
                 <ul className='space-y-2'>
                   {item.features.map((feature) => (
-                    <li key={feature} className='text-sm text-zinc-500 flex items-center'>
+                    <li key={feature} className='text-sm flex items-center'>
                       <span className='text-primary mr-2'>•</span>
                       {feature}
                     </li>
@@ -196,10 +196,10 @@ export default function Home() {
       </section>
 
       {/* Design Process Section */}
-      <section id='process' className='py-24 bg-white relative overflow-hidden'>
+      <section id='process' className='py-12 sm:py-16 md:py-24 bg-white relative overflow-hidden'>
         <div className='absolute inset-0 bg-[url("/images/bg-kitchen-sketch.webp")] opacity-5 bg-cover bg-center'></div>
-        <div className='max-w-6xl mx-auto px-6 relative z-10'>
-          <div className='grid grid-cols-12 gap-12 items-center'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6 relative z-10'>
+          <div className='grid grid-cols-12 gap-6 md:gap-12 items-center'>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -207,8 +207,8 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className='col-span-12 md:col-span-6'
             >
-              <h3 className='section-heading text-zinc-900'>Our Design Process</h3>
-              <p className='tracking-wide text-zinc-600 mb-8'>
+              <h3 className='section-heading text-surface-light text-xl sm:text-2xl md:text-3xl'>Our Design Process</h3>
+              <p className='tracking-wide mb-6 sm:mb-8 text-sm sm:text-base'>
                 From initial consultation to final installation, we guide you through every step with expertise and care.
               </p>
               <div className='space-y-6'>
@@ -224,14 +224,14 @@ export default function Home() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: false }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className='flex gap-4'
+                    className='flex gap-3 sm:gap-4'
                   >
-                    <div className='shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center'>
-                      <span className='text-primary font-semibold'>{item.step}</span>
+                    <div className='shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary/20 flex items-center justify-center'>
+                      <span className='text-primary font-semibold text-sm sm:text-base'>{item.step}</span>
                     </div>
                     <div>
-                      <h5 className='font-semibold text-zinc-900 mb-1'>{item.title}</h5>
-                      <p className='text-sm text-zinc-600 tracking-wide'>{item.desc}</p>
+                      <h5 className='font-semibold text-surface-light mb-1 text-sm sm:text-base'>{item.title}</h5>
+                      <p className='text-xs sm:text-sm tracking-wide'>{item.desc}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -259,22 +259,22 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id='why-choose' className='py-24 bg-zinc-950'>
-        <div className='max-w-6xl mx-auto px-6'>
+      <section id='why-choose' className='py-12 sm:py-16 md:py-24 bg-surface'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className='text-center mb-16'
+            className='text-center mb-8 sm:mb-12 md:mb-16'
           >
-            <h3 className='section-heading text-white'>Why Choose Kustomcabs</h3>
-            <p className='tracking-wide text-zinc-400 max-w-2xl mx-auto'>
+            <h3 className='section-heading text-white text-xl sm:text-2xl md:text-3xl'>Why Choose Kustomcabs</h3>
+            <p className='tracking-wide text-zinc-400 max-w-2xl mx-auto text-sm sm:text-base px-2'>
               Decades of experience, uncompromising quality, and a commitment to excellence in every project.
             </p>
           </motion.div>
           
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+          <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8'>
             {[
               { number: '25+', label: 'Years Experience', icon: '' },
               { number: '500+', label: 'Projects Completed', icon: '' },
@@ -287,11 +287,11 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className='text-center p-6 bg-zinc-900/50 rounded-2xl backdrop-blur-sm border border-zinc-800/50'
+                className='text-center p-4 sm:p-5 md:p-6 bg-surface-light/50 rounded-xl sm:rounded-2xl backdrop-blur-sm border border-zinc-800/50'
               >
-                <div className='text-4xl mb-4'>{stat.icon}</div>
-                <div className='text-4xl font-bold text-primary mb-2'>{stat.number}</div>
-                <div className='text-zinc-400 text-sm tracking-wide'>{stat.label}</div>
+                <div className='text-2xl sm:text-3xl md:text-4xl mb-2 sm:mb-3 md:mb-4'>{stat.icon}</div>
+                <div className='text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-1 sm:mb-2'>{stat.number}</div>
+                <div className='text-zinc-400 text-xs sm:text-sm tracking-wide'>{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -301,17 +301,17 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className='mt-16 grid grid-cols-1 md:grid-cols-2 gap-8'
+            className='mt-8 sm:mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8'
           >
-            <div className='bg-zinc-900/30 p-8 rounded-2xl border border-zinc-800/50'>
-              <h4 className='small-heading text-white mb-4'>Expert Craftsmanship</h4>
-              <p className='text-zinc-400 tracking-wide'>
+            <div className='bg-surface-light p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-zinc-800/50'>
+              <h4 className='small-heading text-white mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl'>Expert Craftsmanship</h4>
+              <p className='text-zinc-400 tracking-wide text-sm sm:text-base'>
                 Our master craftsmen bring decades of experience to every project, ensuring attention to detail and quality that exceeds expectations.
               </p>
             </div>
-            <div className='bg-zinc-900/30 p-8 rounded-2xl border border-zinc-800/50'>
-              <h4 className='small-heading text-white mb-4'>Premium Partnerships</h4>
-              <p className='text-zinc-400 tracking-wide'>
+            <div className='bg-surface-light p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-zinc-800/50'>
+              <h4 className='small-heading text-white mb-3 sm:mb-4 text-lg sm:text-xl md:text-2xl'>Premium Partnerships</h4>
+              <p className='text-zinc-400 tracking-wide text-sm sm:text-base'>
                 Exclusive partnerships with <span className='text-primary'>Bellmont Cabinets</span> and <span className='text-primary'>Procraft Cabinetry</span> give you access to the finest cabinetry available.
               </p>
             </div>
@@ -320,22 +320,22 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section id='testimonials' className='py-24 bg-white'>
-        <div className='max-w-6xl mx-auto px-6'>
+      <section id='testimonials' className='py-12 sm:py-16 md:py-24 bg-white'>
+        <div className='max-w-6xl mx-auto px-4 sm:px-6'>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.8 }}
-            className='text-center mb-16'
+            className='text-center mb-8 sm:mb-12 md:mb-16'
           >
-            <h3 className='section-heading text-zinc-900'>What Our Clients Say</h3>
-            <p className='tracking-wide text-zinc-600 max-w-2xl mx-auto'>
+            <h3 className='section-heading text-surface-light text-xl sm:text-2xl md:text-3xl'>What Our Clients Say</h3>
+            <p className='tracking-wide text-zinc-600 max-w-2xl mx-auto text-sm sm:text-base px-2'>
               Don't just take our word for it. Here's what homeowners say about working with us.
             </p>
           </motion.div>
           
-          <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8'>
             {[
               {
                 quote: 'The attention to detail in our kitchen remodel exceeded all expectations. Every cabinet feels like a work of art.',
@@ -362,19 +362,19 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: false }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className='bg-zinc-50 p-8 rounded-2xl shadow-lg'
+                className='bg-zinc-50 p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl shadow-lg'
               >
-                <div className='flex mb-4'>
+                <div className='flex mb-3 sm:mb-4'>
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className='text-primary text-xl'>⭐</span>
+                    <span key={i} className='text-primary text-base sm:text-lg md:text-xl'>⭐</span>
                   ))}
                 </div>
-                <p className='text-zinc-700 mb-6 tracking-wide italic'>
+                <p className='text-zinc-700 mb-4 sm:mb-6 tracking-wide italic text-sm sm:text-base'>
                   "{testimonial.quote}"
                 </p>
-                <div className='border-t border-zinc-200 pt-4'>
-                  <p className='font-semibold text-zinc-900'>{testimonial.author}</p>
-                  <p className='text-sm text-zinc-500'>{testimonial.location}</p>
+                <div className='border-t border-zinc-200 pt-3 sm:pt-4'>
+                  <p className='font-semibold text-surface-light text-sm sm:text-base'>{testimonial.author}</p>
+                  <p className='text-xs sm:text-sm'>{testimonial.location}</p>
                 </div>
               </motion.div>
             ))}

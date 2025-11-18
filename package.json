@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +27,7 @@
     "tailwindcss-classnames": "^3.2.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.1",
     "@tailwindcss/cli": "^4.1.17",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.6"
